@@ -1,0 +1,24 @@
+POST http://localhost:3333/events
+Content-Type: application/json
+
+{
+  "title": 123,
+  "details": null,
+  "maximumAttendees": 1 
+}
+###
+POST http://localhost:3333/events/f169ca09-02c7-421d-a346-a0c1f15cb9ce/attendees
+Content-Type: application/json
+
+{
+  "name": "Eduarda FS",
+  "email": "dudafsanmartin2@gmail.com"
+}
+###
+GET http://localhost:3333/events/f169ca09-02c7-421d-a346-a0c1f15cb9ce
+###
+GET http://localhost:3333/attendees/1/badge
+###
+GET http://localhost:3333/attendees/4/check-in
+###
+GET http://localhost:3333/events/317d7a31-5c75-45f9-b444-2caf03cc8e1f/attendees
